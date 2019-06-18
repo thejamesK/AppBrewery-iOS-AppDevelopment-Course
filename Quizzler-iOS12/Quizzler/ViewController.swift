@@ -35,17 +35,10 @@ class ViewController: UIViewController {
         else if sender.tag == 2 {
             pickedAnswer = false
         }
-        
-
-        if questionNubmer < 12 {
             
             checkAnswer()
             questionNubmer = questionNubmer + 1
-            
-            questionLabel.text = allQuestions.list[questionNubmer].questionText
-        } else {
-            print("END OF ARRAY")
-        }
+            nextQuestion()
         
         
     }
@@ -58,6 +51,12 @@ class ViewController: UIViewController {
 
     func nextQuestion() {
         
+        if questionNubmer <= 12 {
+            questionLabel.text = allQuestions.list[questionNubmer].questionText
+        } else {
+            print("END OF QUIZ")
+            questionNubmer = 0
+        }
     }
     
     
