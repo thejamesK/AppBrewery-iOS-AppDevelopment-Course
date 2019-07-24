@@ -1,3 +1,6 @@
+WITHOUT PODS FOLDER - YOU NEED TO INSTALL COCOAPODS
+
+
 ![App Brewery Banner](Documentation/AppBreweryBanner.png)
 
 # Flash-Chat
